@@ -1,12 +1,13 @@
 <template>
   <div class="hello">
     <button @click="startRequest()">请求API1</button>
+    <button @click="getAllUser()">获取所有用户</button>
     <p>{{ myresponse }}</p>
   </div>
 </template>
 
 <script>
-import {requestApi1} from "../api/myapi"
+import {requestApi1,GetAllUsers} from "../api/myapi"
 export default {
   name: 'HelloWorld',
   props: {
@@ -26,6 +27,12 @@ export default {
            requestApi1({userId:"12"}).then((response)=>{this.myresponse = response.data}).catch((error)=>{
           console.log(error)
         })
+      },
+      getAllUser(){
+          GetAllUsers(JSON.stringify({"group": 2})).then((res) =>{
+              this.myresponse = res.data
+          }).catch((error)=>{
+            console.log(error)          })
       }
   },
 }
