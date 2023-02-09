@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <h2>学习Axios</h2>
     <button @click="startRequest()">请求API1</button>
     <button @click="getAllUser()">获取所有用户</button>
     <p>{{ myresponse }}</p>
