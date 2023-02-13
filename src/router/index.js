@@ -25,6 +25,21 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../pages/css/css3/LearnCSS3.vue')
+  },
+  {
+    path: '/learnlib',
+    name: '使用第三方库',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../pages/uselib/UseLib.vue'),
+    children: [
+      {
+        path: 'usemavon',
+        name: '使用mavon',
+        component: () => import('../pages/uselib/usemavon/UserMavon.vue')
+      }
+    ]
   }
 ]
 

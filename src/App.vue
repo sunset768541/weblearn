@@ -4,8 +4,9 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/csslearn">CSS基础学习</router-link> |
       <router-link to="/cssadvanced">CSS3高级学习</router-link> |
+      <router-link to="/learnlib">学习第三方库的使用</router-link> |
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
