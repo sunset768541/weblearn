@@ -43,6 +43,26 @@ const routes = [
         path: 'usedraggable',
         name: '使用vuedraggable',
         component: () => import('../pages/uselib/usedragable/UseDraggable.vue')
+      }, 
+      {
+        path: 'useechart1',
+        name: '使用Echart',
+        component: () => import('../pages/uselib/useechart/UseChart1.vue')
+      }, 
+      {
+        path: 'useechart2',
+        name: '使用Echart',
+        component: () => import('../pages/uselib/useechart/UseChart2.vue')
+      }, 
+      {
+        path: 'useechart3',
+        name: '使用Echart',
+        component: () => import('../pages/uselib/useechart/UseChart3.vue')
+      }, 
+      {
+        path: 'useechart4',
+        name: '使用Echart',
+        component: () => import('../pages/uselib/useechart/UseChart4.vue')
       }
     ]
   }
