@@ -38,6 +38,11 @@ const routes = [
         path: 'usemavon',
         name: '使用mavon',
         component: () => import('../pages/uselib/usemavon/UserMavon.vue')
+      },
+      {
+        path: 'usedraggable',
+        name: '使用vuedraggable',
+        component: () => import('../pages/uselib/usedragable/UseDraggable.vue')
       }
     ]
   }
