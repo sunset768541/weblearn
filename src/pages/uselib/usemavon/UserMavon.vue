@@ -1,15 +1,12 @@
 <template>
   <div id="main">
-    <mavon-editor v-model="value"/>
-</div>
+    <mavon-editor v-model="value" />
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
 </style>

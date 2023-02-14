@@ -16,6 +16,7 @@ export default {
   data() {
     return {
       echartpath: '',
+      watercolor: '',
       chartData: [
         { id: 1, path: '/learnlib/useechart1', title: '表格1' },
         { id: 2, path: '/learnlib/useechart2', title: '表格2' },
